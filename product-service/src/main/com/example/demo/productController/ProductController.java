@@ -22,6 +22,7 @@ public class ProductController {
 	@Autowired
 	private final ProductServiceImpl serv;
 
+	
 	@PostMapping()
 	public Product createProduct(@RequestBody Product product) {
 		return serv.save(product);
